@@ -46,6 +46,7 @@ export function makeServer() {
           users
         });
       });
+      this.get('/users/:id');
       this.post('/users');
 
       // necessáio em projetos Next.js para /api não ser confundida com as Api Routes do próprio Next.js
